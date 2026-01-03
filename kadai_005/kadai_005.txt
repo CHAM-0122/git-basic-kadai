@@ -1,0 +1,19 @@
+cham@SHOKOnoMacBook-Air desktop % mkdir git_challenge
+cham@SHOKOnoMacBook-Air desktop % cd git_challenge
+cham@SHOKOnoMacBook-Air git_challenge % touch hello_world.txt
+cham@SHOKOnoMacBook-Air git_challenge % echo " Hello,world! " > ./hello_world.txt
+cham@SHOKOnoMacBook-Air git_challenge % git init
+Initialized empty Git repository in /Users/cham/Desktop/git_challenge/.git/
+cham@SHOKOnoMacBook-Air git_challenge % git add hello_world.txt
+cham@SHOKOnoMacBook-Air git_challenge % git commit -m "１回目のコミット"
+[main (root-commit) ea27294] １回目のコミット
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+cham@SHOKOnoMacBook-Air git_challenge % echo " こんにちは、世界！ " >> ./hello_world.txt
+cham@SHOKOnoMacBook-Air git_challenge % git add hello_world.txt
+cham@SHOKOnoMacBook-Air git_challenge % git commit -m "２回目のコミット"
+[main 55ab1e5] ２回目のコミット
+ 1 file changed, 1 insertion(+)
+cham@SHOKOnoMacBook-Air git_challenge % git log --oneline
+55ab1e5 (HEAD -> main) ２回目のコミット
+ea27294 １回目のコミット
